@@ -76,31 +76,38 @@ p {
 .menu {
     list-style: none;
     font-family: fantasy;
-    position: absolute;
+    position: fixed;
+    background: white;
+    width: 100%;
     top: 10px;
-    right: 30px;
+    margin-top: 0px;
     z-index: 10;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .link {
     float: left;
     color: darkmagenta;
     padding-top: 5px;
-    padding-left: 9px;
-    padding-right: 9px;
+    padding-left: 33px;
+    padding-right: 25px;
     padding-bottom: 5px;
     font-family: serif;
     font-size: 20px;
+    display: inline;
 }
 
 
 .link:hover {
     background-color: blanchedalmond;
+    font-size: 25px;
+    text-decoration: underline;
 }
 
 a {
     text-decoration: none;
+    color: crimson;
+    text-shadow: 2px 2px gainsboro;
 }
 
 .article:hover {
@@ -109,4 +116,24 @@ a {
 
 html {
     scroll-behavior: smooth;
+}
+
+#writing a {
+   text-shadow: none !important;
+   text-decoration: underline !important;
+    color: blue !important;
+}
+
+#contact {
+   background: firebrick;
+   
+}
+
+.contact1 a {
+    color: white;
+    text-shadow: none;
+}
+
+.contact1 h3 {
+    display: inline;
 }
